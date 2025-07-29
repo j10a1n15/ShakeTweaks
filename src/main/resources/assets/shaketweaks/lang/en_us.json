@@ -11,5 +11,7 @@
   "shake-tweaks.disable-screen-damage-tilt": "Disable Screen Damage Tilt",
   "shake-tweaks.disable-screen-damage-tilt.description": "Disables the screen shake when taking damage.",
   "shake-tweaks.disable-hand-damage-tilt": "Disable Hand Damage Tilt",
-  "shake-tweaks.disable-hand-damage-tilt.description": "Disables the hand shake when taking damage."
+  "shake-tweaks.disable-hand-damage-tilt.description": "Disables the hand shake when taking damage.",
+  "shake-tweaks.disable-hand-view-sway": "Disable Hand View Sway",
+  "shake-tweaks.disable-hand-view-sway.description": "Disables the hand view sway when moving your mouse."
 }

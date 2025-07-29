@@ -1,1 +1,1 @@
-- Fix version ranges
+- Add "Disable Hand View Sway" (moved from Overlay Tweaks)

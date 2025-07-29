@@ -25,6 +25,7 @@ public class ShakeTweaksConfig {
     @SerialEntry public boolean disableMapBobbing = true;
     @SerialEntry public boolean disableHandDamage = false;
     @SerialEntry public boolean disableScreenDamage = false;
+    @SerialEntry public boolean disableHandViewSway = false;
 
     public static Screen configScreen(Screen parent) {
         return YetAnotherConfigLib.create(CONFIG, ((defaults, config, builder) -> builder
@@ -65,6 +66,12 @@ public class ShakeTweaksConfig {
                                 .name(Component.translatable("shake-tweaks.disable-hand-damage-tilt"))
                                 .description(OptionDescription.of(Component.translatable("shake-tweaks.disable-hand-damage-tilt.description")))
                                 .binding(defaults.disableHandDamage, () -> config.disableHandDamage, newVal -> config.disableHandDamage = newVal)
+                                .controller(TickBoxControllerBuilder::create)
+                                .build())
+                        .option(Option.<Boolean>createBuilder()
+                                .name(Component.translatable("shake-tweaks.disable-hand-view-sway"))
+                                .description(OptionDescription.of(Component.translatable("shake-tweaks.disable-hand-view-sway.description")))
+                                .binding(defaults.disableHandViewSway, () -> config.disableHandViewSway, newVal -> config.disableHandViewSway = newVal)
                                 .controller(TickBoxControllerBuilder::create)
                                 .build())
                         .build())
